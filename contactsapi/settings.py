@@ -139,9 +139,7 @@ USE_TZ = True
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "https://different-kettle-production.up.railway.app",
-    "https://different-kettle-production.up.railway.app/api",
     "http://different-kettle-production.up.railway.app",
-    "http://different-kettle-production.up.railway.app/api",
 ]
 #JWT
 JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
