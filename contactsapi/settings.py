@@ -136,7 +136,7 @@ USE_I18N = True
 USE_TZ = True
 
 #CORS
-CORS_ALLOWED_ORIGINS = [
+CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "https://different-kettle-production.up.railway.app",
 ]
