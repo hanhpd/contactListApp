@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'authentication',
-    'contacts'
+    'contacts',
+    'corsheaders',
 ]
 
 SWAGGER_SETTINGS = {
@@ -66,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -133,6 +135,11 @@ USE_I18N = True
 
 USE_TZ = True
 
+#CORS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://different-kettle-production.up.railway.app",
+]
 #JWT
 JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 
