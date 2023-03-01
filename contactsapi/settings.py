@@ -142,7 +142,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://different-kettle-production.up.railway.app",
 ]
 #JWT
-JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+JWT_SECRET_KEY = 'HanhpDdddddddddddddddddddddd'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
